@@ -1,4 +1,4 @@
-import useAlert from "./use-alert";
-import Alert from "./alert";
+import useToast from "./use-toast.tsx";
+import Toast from "./Toast.tsx";
 
-export { useAlert, Alert };
+export { useToast, Toast };
