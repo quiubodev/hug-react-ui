@@ -1,7 +1,3 @@
-Aquí tienes la documentación actualizada que cubre tanto el componente `Toast` como el hook `useToast`, presentados en formato Markdown:
-
----
-
 # `Toast` Component
 
 El componente `Toast` se utiliza para mostrar notificaciones emergentes (toasts) con diferentes variantes como success, danger, warning e info. Utiliza Tailwind CSS para los estilos y `react-icons` para mostrar los iconos.
@@ -105,6 +101,3 @@ export default App;
 - **Tailwind CSS**: Asegúrate de tener configurado Tailwind CSS en tu proyecto para estilos consistentes en las notificaciones toast.
 - **Dependencias**: Verifica que las dependencias requeridas como `react` y `react-icons` estén instaladas correctamente.
 
----
-
-Esta documentación debería proporcionar una guía completa para integrar y utilizar tanto el componente `Toast` como el hook `useToast` en tu aplicación React. Si tienes más preguntas o necesitas ayuda adicional, no dudes en preguntar.
