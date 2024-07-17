@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Toast, TOAST_VARIANTS } from "./Toast.tsx";
-import "./toast.css";
 
-export type UseToastProps = {
+type UseToastProps = {
   type: TOAST_VARIANTS;
   message: string;
 };
 
-export default function useToast() {
+const useToast = () => {
   const [list, setList] = useState<UseToastProps[]>([]);
 
   const toast = (item: UseToastProps) => {
@@ -29,4 +28,8 @@ export default function useToast() {
   );
 
   return { toast, toastList };
-}
+};
+
+export type { UseToastProps };
+
+export default useToast;
