@@ -1,8 +1,9 @@
-import Toast, { ToastProps } from "../Toast";
+import { Toast } from "../Toast";
 import "../../../index.css";
+import { UseToastProps } from "../use-toast";
 
-const ToastMock = ({ type, children }: ToastProps) => {
-  return <Toast type={type}>{children}</Toast>;
+const ToastMock = ({ type, message }: UseToastProps) => {
+  return <Toast type={type}>{message}</Toast>;
 };
 
 export default ToastMock;

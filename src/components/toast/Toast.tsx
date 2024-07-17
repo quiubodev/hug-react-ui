@@ -5,6 +5,8 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { FaTriangleExclamation } from "react-icons/fa6";
 import { FaCircleInfo } from "react-icons/fa6";
 
+import "./toast.css";
+
 export enum TOAST_VARIANTS {
   success = "success",
   danger = "danger",
@@ -17,10 +19,7 @@ export type ToastProps = {
   children: React.ReactNode;
 };
 
-export default function Toast({
-  type = TOAST_VARIANTS.success,
-  children,
-}: ToastProps) {
+export function Toast({ type = TOAST_VARIANTS.success, children }: ToastProps) {
   const classVariant = {
     success: "bg-green-300 text-green-900",
     danger: "bg-red-100 text-red-900",

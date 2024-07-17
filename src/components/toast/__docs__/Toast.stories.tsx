@@ -15,28 +15,28 @@ type Story = StoryObj<typeof ToastMock>;
 export const Success: Story = {
   args: {
     type: TOAST_VARIANTS.success,
-    children: "Alerta con informacion de exito",
+    message: "Alerta con informacion de exito",
   },
 };
 
 export const Info: Story = {
   args: {
     type: TOAST_VARIANTS.info,
-    children: "Alerta con informacion importante",
+    message: "Alerta con informacion importante",
   },
 };
 
 export const Danger: Story = {
   args: {
     type: TOAST_VARIANTS.danger,
-    children: "Alerta con informacion de un error",
+    message: "Alerta con informacion de un error",
   },
 };
 
 export const Warning: Story = {
   args: {
     type: TOAST_VARIANTS.warning,
-    children: "Alerta con informacion de advertencia",
+    message: "Alerta con informacion de advertencia",
   },
 };
 

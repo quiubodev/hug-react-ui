@@ -1,15 +1,16 @@
-import { ReactNode, useState } from "react";
-import Toast, { TOAST_VARIANTS } from "./Toast.tsx";
+import { useState } from "react";
+import { Toast, TOAST_VARIANTS } from "./Toast.tsx";
+import "./toast.css";
 
-type ToastItem = {
+export type UseToastProps = {
   type: TOAST_VARIANTS;
-  message: ReactNode;
+  message: string;
 };
 
 export default function useToast() {
-  const [list, setList] = useState<ToastItem[]>([]);
+  const [list, setList] = useState<UseToastProps[]>([]);
 
-  const toast = (item: ToastItem) => {
+  const toast = (item: UseToastProps) => {
     setList((prevList) => [item, ...prevList]);
 
     setTimeout(() => {
