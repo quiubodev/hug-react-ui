@@ -19,20 +19,17 @@ type ToastProps = {
 
 const Toast = ({ type = TOAST_VARIANTS.success, children }: ToastProps) => {
   const classVariant = {
-    success: "bg-green-300 text-green-900",
-    danger: "bg-red-100 text-red-900",
-    warning: "bg-yellow-100 text-yellow-900",
-    info: "bg-blue-100 text-blue-900",
+    success: "toast-success",
+    danger: "toast-danger",
+    warning: "toast-warning",
+    info: "toast-info",
   };
 
   return (
     <div
       role={"alert"}
       aria-live={"assertive"}
-      className={classNames(
-        "p-4 shadow max-w-lg rounded-md m-2 flex gap-2 items-center",
-        classVariant[type],
-      )}
+      className={classNames("toast", classVariant[type])}
     >
       <span className={"text-2xl"}>
         {type === TOAST_VARIANTS.success ? <FaCircleCheck /> : null}

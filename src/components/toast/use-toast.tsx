@@ -18,7 +18,7 @@ const useToast = () => {
   };
 
   const toastList = (
-    <div className={"absolute bottom-0 right-0"}>
+    <div className={"toast-bottom-right"}>
       {list.map((item, index) => (
         <Toast type={item.type} key={index}>
           {item.message}
